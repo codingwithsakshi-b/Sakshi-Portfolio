@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sakshi Sharma - B.Tech CS student and aspiring full-stack developer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>My Blog</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="#quest">Quest</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#fun-fact">Fun Fact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="profile-header">
+            <img src="sakshi.png" alt="A photo of Sakshi Sharma" loading="lazy">
+            <h1>SAKSHI SHARMA</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section id="about">
+            <p>
+                Hey there! <br>
+                I’m a B.Tech CS student on a mission to turn 🐍 Python scripts into full-stack masterpieces.
+            </p>
+        </section>
+
+        <!-- Intro Title -->
+        <h2>Here’s a sneak peek of my world:</h2>
+
+        <!-- Academic Track -->
+        <section id="academic" class="card">
+            <h3>🎓 Academic Track</h3>
+            <p>1st-year B.Tech in Computer Science</p>
+        </section>
+
+        <!-- Current Quest -->
+        <section id="quest" class="card">
+            <h3>🐍 Current Quest</h3>
+            <p>Mastering Advanced Python, diving deep into DSA, and building full-stack apps</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="card">
+            <h3>💡 Superpowers</h3>
+            <ul>
+                <li>Writing clean, efficient Python code</li>
+                <li>Crafting data structures & algorithms that don’t crash under pressure</li>
+                <li>Spinning up front-to-back web projects with flair</li>
+            </ul>
+        </section>
+
+        <!-- Side Interests -->
+        <section class="card">
+            <h4>🎯 On the Side</h4>
+            <p>Chasing motivational books to power my growth mindset</p>
+        </section>
+
+        <!-- Fun Fact -->
+        <section id="fun-fact" class="card">
+            <h4>🤖 Fun Fact</h4>
+            <p>I literally translate ☕ + 🔋 → 💻 code sessions!</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form" class="card">
+            <h3>📬 Get in Touch</h3>
+            <form action="https://formspree.io/f/xqaqegvq" method="POST">
+
+                <input type="text" name="name" placeholder="eg. Sakshi Sharma" required><br>
+                <input type="email" name="_replyto" placeholder="eg. ABC@gmail.com" required><br>
+                <textarea placeholder="Your Message" rows="4" required></textarea><br>
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+
+        <!-- Thought or Blog Section -->
+        <section id="thoughts" class="card">
+            <h3>📝 Thoughts & Ideas</h3>
+            <p>“Programming isn’t just code — it’s creativity, logic, and passion made visible.”</p>
+            <p>I occasionally jot down thoughts on tech, mindset, and student life. Stay tuned!</p>
+        </section>
+
+        <!-- Quotes or Inspiration -->
+        <section id="quotes" class="card">
+            <h3>💬 Quotes That Inspire Me</h3>
+            <ul>
+                <li>“The best way to predict the future is to invent it.” – Alan Kay</li>
+                <li>“Success is not final, failure is not fatal: It is the courage to continue that counts.” – Winston
+                    Churchill</li>
+                <li>“Talk is cheap. Show me the code.” – Linus Torvalds</li>
+            </ul>
+        </section>
+
+        <!-- Dark Mode Toggle -->
+        <section id="theme-toggle">
+            <button id="toggle-btn" class="btn">🌙 Toggle Dark Mode</button>
+        </section>
+
+        <section id="contact">
+            <a href="https://github.com/codingwithsakshi-b" target="_blank" class="btn">View My GitHub</a>
+            <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+        </section>
+
+    </main>
+
+    <!-- Optional Footer -->
+    <footer>
+        <p>&copy; 2025 Sakshi Sharma</p>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+    
+</body>
+
+</html>
